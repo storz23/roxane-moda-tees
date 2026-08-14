@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roxane Moda | Diseña y Compra Camisetas Estampadas Streetwear</title>
+  <meta name="description" content="Estudio interactivo de diseño y personalización de camisetas estampadas de alta calidad en tiempo real. Algodón 100% 240GSM e impresión DTG 4K.">
+  <meta name="keywords" content="camisetas estampadas, personalizadas, streetwear, t-shirt studio, custom tees, roxane moda">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">R</div>
+        <div class="brand-text">ROXANE <span>STUDIO</span></div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#studio" class="active">Estudio Customizer</a></li>
+        <li><a href="#catalog">Colecciones</a></li>
+        <li><a href="#features">Calidad DTG</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-icon" id="quickSearchBtn" title="Buscar">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="btn btn-primary cart-trigger" id="cartOpenBtn">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Carrito
+          <span class="cart-badge" id="cartCountBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="badge">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Personalización Fotorrealista 4K
+          </span>
+          <h1>DISEÑA TU ESTILO. <br><span class="gradient-text">IMPRIME TU ACTITUD.</span></h1>
+          <p>La plataforma interactiva líder en impresión de camisetas streetwear de alto gramaje (240GSM). Crea tu propio diseño en 2D en vivo o elige de nuestras colecciones urbanas exclusivas.</p>
+          
+          <div class="hero-actions">
+            <a href="#studio" class="btn btn-primary">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Ir al Estudio Canvas
+            </a>
+            <a href="#catalog" class="btn btn-secondary">Explorar Colección</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>+15,000</h3>
+              <p>Camisetas Entregadas</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Algodón Peinado 240g</p>
+            </div>
+            <div class="stat-item">
+              <h3>DTG 4K</h3>
+              <p>Sin Desteñido</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-preview">
+          <div class="hero-img-card">
+            <img src="assets/hero.png" alt="Camiseta Streetwear Personalizada Roxane Moda">
+            <div class="hero-floating-badge glass-panel">
+              <div>
+                <div class="badge-title">Colección Cyberpunk Heavyweight</div>
+                <div class="badge-subtitle">Prenda recomendada del mes</div>
+              </div>
+              <span class="product-price">$65,000 COP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE CUSTOMIZER STUDIO SECTION -->
+  <section class="studio-section" id="studio">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Editor 2D Interactivo</span>
+        <h2>ESTUDIO DE PERSONALIZACIÓN EN VIVO</h2>
+        <p>Selecciona tu tipo de camiseta, añade texto con fuentes urbanas o sube tus propios gráficos. Visualiza los cambios al instante.</p>
+      </div>
+
+      <div class="studio-grid">
+        
+        <!-- LEFT TOOLBAR / CONTROLS -->
+        <div class="studio-controls glass-panel">
+          <!-- NAVIGATION TABS -->
+          <div class="studio-tabs">
+            <button class="tab-btn active" data-tab="tab-apparel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+              Prenda
+            </button>
+            <button class="tab-btn" data-tab="tab-text">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+              Texto
+            </button>
+            <button class="tab-btn" data-tab="tab-graphics">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              Gráficos
+            </button>
+            <button class="tab-btn" data-tab="tab-upload">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              Subir
+            </button>
+          </div>
+
+          <!-- TAB 1: PRENDA (APPAREL) -->
+          <div class="tab-panel active" id="tab-apparel">
+            <div class="form-group">
+              <label>Corte / Estilo de Prenda</label>
+              <select class="form-control" id="apparelModelSelect">
+                <option value="oversized">Oversized Heavyweight (240GSM)</option>
+                <option value="standard">Standard Fit Cotton (180GSM)</option>
+                <option value="crop">Urban Crop Top Cut</option>
+                <option value="hoodie">Heavyweight Urban Hoodie</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Color de Tela</label>
+              <div class="color-swatches" id="colorSwatches">
+                <div class="color-swatch active" data-color="#111215" style="background: #111215;" title="Negro Ónice"></div>
+                <div class="color-swatch" data-color="#f5f6f8" style="background: #f5f6f8;" title="Blanco Puro"></div>
+                <div class="color-swatch" data-color="#4a505a" style="background: #4a505a;" title="Gris Acid Wash"></div>
+                <div class="color-swatch" data-color="#3d4f42" style="background: #3d4f42;" title="Verde Sage"></div>
+                <div class="color-swatch" data-color="#691a24" style="background: #691a24;" title="Rojo Carmín"></div>
+                <div class="color-swatch" data-color="#cbb593" style="background: #cbb593;" title="Arena Dune"></div>
+                <div class="color-swatch" data-color="#1b2a4a" style="background: #1b2a4a;" title="Azul Real"></div>
+                <div class="color-swatch" data-color="#483359" style="background: #483359;" title="Púrpura Deep"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Talla Solicitada</label>
+              <select class="form-control" id="apparelSizeSelect">
+                <option value="S">Small (S)</option>
+                <option value="M" selected>Medium (M)</option>
+                <option value="L">Large (L)</option>
+                <option value="XL">Extra Large (XL)</option>
+                <option value="XXL">Double XL (XXL)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- TAB 2: TEXTO -->
+          <div class="tab-panel" id="tab-text">
+            <div class="form-group">
+              <label>Texto a Estampar</label>
+              <input type="text" class="form-control" id="textInput" placeholder="Ej: TOKYO 2099">
+            </div>
+
+            <div class="form-group">
+              <label>Tipografía</label>
+              <select class="form-control" id="fontFamilySelect">
+                <option value="Bebas Neue" style="font-family: 'Bebas Neue';">Bebas Neue (Urban Gothic)</option>
+                <option value="Space Grotesk" style="font-family: 'Space Grotesk';">Space Grotesk (Tech)</option>
+                <option value="Permanent Marker" style="font-family: 'Permanent Marker';">Permanent Marker (Graffiti)</option>
+                <option value="Outfit" style="font-family: 'Outfit';">Outfit Modern Bold</option>
+                <option value="Fira Code" style="font-family: 'Fira Code';">Fira Code (Cyber)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Color de Letra</label>
+              <input type="color" class="form-control" id="textColorPicker" value="#00f2fe" style="height: 42px; padding: 4px; cursor: pointer;">
+            </div>
+
+            <div class="form-group">
+              <label>Tamaño de Fuente <span id="fontSizeVal">32px</span></label>
+              <input type="range" class="form-control" id="fontSizeRange" min="16" max="72" value="32">
+            </div>
+
+            <button class="btn btn-primary" id="addTextBtn">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              Insertar Texto en Camiseta
+            </button>
+          </div>
+
+          <!-- TAB 3: GRÁFICOS (PRESET GALLERY) -->
+          <div class="tab-panel" id="tab-graphics">
+            <div class="form-group">
+              <label>Colección de Arte Vectorial</label>
+              <div class="graphics-grid" id="graphicsGrid">
+                <div class="graphic-item" data-src="assets/cyber_samurai.png" title="Cyber Samurai Mask">
+                  <img src="assets/cyber_samurai.png" alt="Cyber Samurai">
+                </div>
+                <div class="graphic-item" data-src="assets/retro_skull.png" title="Retro Underground Skull">
+                  <img src="assets/retro_skull.png" alt="Retro Skull">
+                </div>
+                <div class="graphic-item" data-src="assets/minimal_astronaut.png" title="Minimal Line Astronaut">
+                  <img src="assets/minimal_astronaut.png" alt="Minimal Astronaut">
+                </div>
+              </div>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">Haz clic en cualquier gráfico para estamparlo en el lienzo.</p>
+          </div>
+
+          <!-- TAB 4: SUBIR ARTE -->
+          <div class="tab-panel" id="tab-upload">
+            <div class="form-group">
+              <label>Sube tu propia Imagen (PNG / JPG)</label>
+              <input type="file" class="form-control" id="imageUploadInput" accept="image/*">
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">
+              💡 Recomendación: Utiliza imágenes PNG transparentes de más de 1000px para obtener la máxima resolución de impresión DTG.
+            </p>
+          </div>
+
+          <!-- CLEAR & RESET BUTTONS -->
+          <div style="margin-top: auto; display: flex; gap: 10px;">
+            <button class="btn btn-secondary" id="clearCanvasBtn" style="flex: 1; font-size: 0.8rem;">Limpiar Lienzo</button>
+            <button class="btn btn-secondary" id="flipCanvasBtn" style="flex: 1; font-size: 0.8rem;">Voltear Lado</button>
+          </div>
+        </div>
+
+        <!-- CENTER VIEWPORT - LIVE TSHIRT CANVAS -->
+        <div class="studio-canvas-container glass-panel">
+          
+          <!-- TOGGLE VIEW (FRONT / BACK) -->
+          <div class="canvas-toolbar">
+            <button class="view-toggle-btn active" id="viewFrontBtn" data-view="front">Vista Frontal</button>
+            <button class="view-toggle-btn" id="viewBackBtn" data-view="back">Vista Trasera</button>
+          </div>
+
+          <!-- T-SHIRT SVG VECTOR WRAPPER -->
+          <div class="tshirt-wrapper" id="tshirtWrapper">
+            <!-- REALISTIC SVG T-SHIRT -->
+            <svg class="tshirt-svg" id="tshirtSvg" viewBox="0 0 500 550" fill="#111215">
+              <g id="tshirtPathGroup">
+                <!-- Shirt Body -->
+                <path id="tshirtBody" d="M 140,40 Q 250,90 360,40 L 470,120 L 400,200 L 370,170 L 370,500 L 130,500 L 130,170 L 100,200 L 30,120 Z" />
+                <!-- Collar Detail -->
+                <path d="M 180,45 Q 250,110 320,45 Q 250,80 180,45" fill="rgba(0,0,0,0.3)" />
+                <path d="M 180,45 Q 250,80 320,45" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3" />
+                <!-- Seams -->
+                <path d="M 130,170 L 370,170" stroke="rgba(0,0,0,0.25)" stroke-width="2" />
+                <path d="M 140,40 L 130,170" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+                <path d="M 360,40 L 370,170" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+              </g>
+            </svg>
+
+            <!-- PRINTABLE BOUNDING AREA -->
+            <div class="print-area active" id="printArea"></div>
+
+            <!-- INTERACTIVE CANVAS OVERLAY -->
+            <canvas id="interactiveCanvas" width="200" height="270"></canvas>
+          </div>
+
+          <!-- QUALITY RESOLUTION BADGE -->
+          <div class="quality-pill">
+            <span class="quality-dot"></span>
+            Calidad Impresión DTG: <strong style="color: var(--accent-cyan); margin-left: 4px;">300 DPI (Excelente)</strong>
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL - SUMMARY & PRICING -->
+        <div class="studio-summary glass-panel">
+          <div class="summary-header">
+            <h3>RESUMEN DEL DISEÑO</h3>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Cotización en tiempo real</span>
+          </div>
+
+          <div class="price-breakdown">
+            <div class="price-row">
+              <span>Camiseta Base (<span id="summaryModelText">Oversized 240g</span>)</span>
+              <span>$45,000 COP</span>
+            </div>
+            <div class="price-row">
+              <span>Estampado Frontal</span>
+              <span id="summaryFrontPrice">$15,000 COP</span>
+            </div>
+            <div class="price-row">
+              <span>Estampado Trasero</span>
+              <span id="summaryBackPrice">$0 COP</span>
+            </div>
+            <div class="price-row">
+              <span>Descuento por Cantidad</span>
+              <span id="summaryDiscountText" style="color: var(--accent-neon-green);">0% OFF</span>
+            </div>
+            <div class="price-row total">
+              <span>TOTAL UNITARIO</span>
+              <span class="price-amount" id="totalUnitPrice">$60,000 COP</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Cantidad de Prendas</label>
+            <div class="quantity-picker">
+              <button class="qty-btn" id="qtyMinusBtn">-</button>
+              <span class="qty-value" id="qtyValue">1</span>
+              <button class="qty-btn" id="qtyPlusBtn">+</button>
+            </div>
+          </div>
+
+          <div class="discount-banner">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+            <span>💡 <strong>Descuento por volumen:</strong> Llévala desde 6 unidades con 15% OFF.</span>
+          </div>
+
+          <button class="btn btn-primary" id="addToCartStudioBtn" style="width: 100%; padding: 14px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            Agregar este Diseño al Carrito
+          </button>
+
+          <button class="btn btn-whatsapp" id="directWhatsappBtn" style="width: 100%; padding: 14px;">
+            💬 Pedir este Diseño por WhatsApp
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESET CATALOG SECTION -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Colección Limitada</span>
+        <h2>DISEÑOS DESTACADOS READY-TO-WEAR</h2>
+        <p>Explora nuestras prendas listos para pedir o pulsa "Personalizar este diseño" para adaptarlo a tu propio estilo.</p>
+      </div>
+
+      <div class="catalog-filters">
+        <button class="filter-btn active" data-filter="all">Todos los Estilos</button>
+        <button class="filter-btn" data-filter="cyberpunk">Cyberpunk & Neon</button>
+        <button class="filter-btn" data-filter="urban">Urban Vintage</button>
+        <button class="filter-btn" data-filter="minimal">Minimal Line Art</button>
+      </div>
+
+      <div class="product-grid">
+        
+        <!-- CARD 1 -->
+        <div class="product-card" data-category="cyberpunk">
+          <div class="product-img-wrapper">
+            <span class="badge product-tag">Top Ventas</span>
+            <img src="assets/cyber_samurai.png" alt="Camiseta Cyber Samurai">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cyber Samurai 2099 Heavyweight</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Estampado en alta definición sobre algodón negro 240g.</p>
+            <div class="product-price">$65,000 COP</div>
+            <div class="product-actions">
+              <button class="btn btn-primary customize-preset-btn" data-src="assets/cyber_samurai.png" data-name="Cyber Samurai 2099">Personalizar</button>
+              <button class="btn btn-secondary buy-preset-btn" data-name="Cyber Samurai 2099" data-price="65000" data-img="assets/cyber_samurai.png">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product-card" data-category="urban">
+          <div class="product-img-wrapper">
+            <span class="badge product-tag">Edición Retro</span>
+            <img src="assets/retro_skull.png" alt="Camiseta Retro Underground Skull">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tokyo Underground Vintage Tee</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Emblema retro gothic de alta resistencia al lavado.</p>
+            <div class="product-price">$62,000 COP</div>
+            <div class="product-actions">
+              <button class="btn btn-primary customize-preset-btn" data-src="assets/retro_skull.png" data-name="Tokyo Underground Skull">Personalizar</button>
+              <button class="btn btn-secondary buy-preset-btn" data-name="Tokyo Underground Skull" data-price="62000" data-img="assets/retro_skull.png">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product-card" data-category="minimal">
+          <div class="product-img-wrapper">
+            <span class="badge product-tag">Nuevo</span>
+            <img src="assets/minimal_astronaut.png" alt="Camiseta Minimal Line Astronaut">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cosmic Minimalist Line Tee</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Arte continuo con salpicadura holográfica en contraste.</p>
+            <div class="product-price">$58,000 COP</div>
+            <div class="product-actions">
+              <button class="btn btn-primary customize-preset-btn" data-src="assets/minimal_astronaut.png" data-name="Cosmic Minimalist">Personalizar</button>
+              <button class="btn btn-secondary buy-preset-btn" data-name="Cosmic Minimalist" data-price="58000" data-img="assets/minimal_astronaut.png">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES / QUALITY SECTION -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card glass-panel">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Impresión DTG 4K Ultra HD</h3>
+          <p>Utilizamos tintas ecológicas base agua que se integran directamente a las fibras de la tela sin agrietarse ni perder color tras decenas de lavados.</p>
+        </div>
+
+        <div class="feature-card glass-panel">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+          </div>
+          <h3>Algodón 100% Heavyweight 240GSM</h3>
+          <p>Textura suave, caída estructurada e impecable estilo streetwear urbano con costuras reforzadas en hombros y cuello.</p>
+        </div>
+
+        <div class="feature-card glass-panel">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Envíos Rápidos a todo el País</h3>
+          <p>Despacho expreso en 48 horas a nivel nacional con seguimiento en tiempo real y empaque sustentable de colección.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CART DRAWER SLIDE-OVER -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>TU CARRITO DE COMPRAS</h3>
+        <button class="btn btn-icon" id="cartCloseBtn">✕</button>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered by JS -->
+        <p style="text-align: center; color: var(--text-muted); margin-top: 40px;">Tu carrito está vacío actualmente.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="price-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotalText">$0 COP</span>
+        </div>
+        <div class="price-row total">
+          <span>TOTAL ESTIMADO</span>
+          <span class="price-amount" id="cartTotalText">$0 COP</span>
+        </div>
+        <button class="btn btn-primary" id="checkoutModalOpenBtn" style="width: 100%;">Procesar Pago Seguro</button>
+        <button class="btn btn-whatsapp" id="checkoutWhatsappBtn" style="width: 100%;">Enviar Pedido por WhatsApp 💬</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="font-family: var(--font-urban); font-size: 1.6rem;">FINALIZAR COMPRA EXPRESS</h3>
+        <button class="btn btn-icon" id="checkoutModalCloseBtn">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkoutForm" onsubmit="event.preventDefault(); window.ROXANE.processPayment();">
+          <div class="form-group">
+            <label>Nombre Completo</label>
+            <input type="text" class="form-control" required placeholder="Ej: Carlos Mendoza">
+          </div>
+          <div class="form-group">
+            <label>Teléfono WhatsApp</label>
+            <input type="tel" class="form-control" required placeholder="Ej: +57 300 123 4567">
+          </div>
+          <div class="form-group">
+            <label>Dirección de Envío y Ciudad</label>
+            <input type="text" class="form-control" required placeholder="Ej: Calle 45 # 12-34, Bogotá">
+          </div>
+          <div class="form-group">
+            <label>Método de Pago</label>
+            <select class="form-control" id="paymentMethodSelect">
+              <option value="card">💳 Tarjeta de Crédito / Débito</option>
+              <option value="nequi">📱 Nequi / Bancolombia / PSE</option>
+              <option value="whatsapp">💬 Confirmar y Coordinar Pago por WhatsApp</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px; padding: 14px;">
+            Confirmar y Generar Orden
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="brand-logo">
+          <div class="logo-icon">R</div>
+          <div class="brand-text">ROXANE <span>STUDIO</span></div>
+        </a>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Plataforma de Personalización & E-Commerce Streetwear Premium © 2026</p>
+      </div>
+      <div class="footer-bottom">
+        Diseñado para Roxane Moda. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
